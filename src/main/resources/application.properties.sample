@@ -1,0 +1,15 @@
+##Profiles Properties (dev/prod)
+spring.profiles.active=dev
+
+## Tomcat Properties
+server.servlet.context-path=/api/v1/
+server.port=8084
+
+## DataSource Properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/qcinema
+spring.datasource.username=login
+spring.datasource.password=pass
+
+## Hibernate Properties
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=none
