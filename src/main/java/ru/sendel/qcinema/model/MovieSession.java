@@ -35,6 +35,9 @@ public class MovieSession {
    @NotNull
    private Integer cost;
 
+   @NotNull
+   private String hall;
+
    @Length(max = 32)
    private String hashcode;
 
@@ -84,5 +87,13 @@ public class MovieSession {
 
    public void setHashcode(String hashcode) {
       this.hashcode = hashcode;
+   }
+
+   public String getHall() {
+      return hall;
+   }
+
+   public void setHall(String hall) {
+      this.hall = hall;
    }
 }

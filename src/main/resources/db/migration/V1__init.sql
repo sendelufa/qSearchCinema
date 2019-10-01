@@ -33,6 +33,7 @@ CREATE TABLE public.movie_session (
 	cinema_id serial NOT NULL,
 	"date" date NOT NULL,
 	"cost" int NOT NULL,
+	hall varchar(32) NULL,
 	hashcode varchar(32) NULL,
 	CONSTRAINT movie_session_pk PRIMARY KEY (id),
 	CONSTRAINT movie_session_film_fk FOREIGN KEY (film_id) REFERENCES public.movie(id),
